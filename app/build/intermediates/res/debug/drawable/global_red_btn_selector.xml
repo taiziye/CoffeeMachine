@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/g_red_long_btn_pressed" android:state_pressed="true"/>
+    <item android:drawable="@drawable/g_red_long_btn_nomal" />
+
+</selector><!-- From: file:/C:/Users/shengshoubo/Desktop/CoffeeMachine/app/src/main/res/drawable/global_red_btn_selector.xml -->

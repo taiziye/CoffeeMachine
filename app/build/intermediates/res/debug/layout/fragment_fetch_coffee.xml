@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="@color/transparent" 
+	android:orientation="vertical">
+	
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/home_indicator_bar_height"
+		android:orientation="horizontal">
+		
+	    <ImageView 
+	        android:id="@+id/buy_coffee_back_btn"
+	        android:layout_width="@dimen/home_back_btn_size" 
+	        android:layout_height="@dimen/home_back_btn_size"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/home_back_selector"
+	        android:layout_marginLeft="15dp"
+	        android:contentDescription="@string/empty"
+            android:visibility="gone"/>
+
+	</RelativeLayout>
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center"
+		android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fetch_coffee_qrcode_tip"
+            android:layout_marginBottom="@dimen/fetch_coffee_input_margin"
+            android:textSize="@dimen/fetch_coffee_input_tip_font_size"
+            android:textColor="@color/grey"/>
+
+        <ImageView
+            android:id="@+id/fetch_coffee_qrcode"
+            android:layout_width="@dimen/fetch_coffee_qrcode_size"
+            android:layout_height="@dimen/fetch_coffee_qrcode_size"
+            android:contentDescription="@string/empty"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="@dimen/fetch_coffee_input_panel_width"
+            android:layout_height="2dp"
+            android:background="@color/split_line_grey_color_d9d9d9"
+            android:layout_marginTop="@dimen/fetch_coffee_input_margin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fetch_coffee_input_code_tip"
+            android:layout_marginBottom="@dimen/fetch_coffee_input_margin"
+            android:layout_marginTop="@dimen/fetch_coffee_qrcode_margin_top"
+            android:textSize="@dimen/fetch_coffee_input_tip_font_size"
+            android:textColor="@color/grey"/>
+	    
+	    <com.netease.vendor.ui.DigitsEditText
+			android:id="@+id/fetch_coffee_input_edit"
+			android:layout_width="@dimen/fetch_coffee_input_panel_width"
+			android:layout_height="@dimen/fetch_coffee_input_panel_height"
+			android:background="@drawable/input_digits_panel_edit_bg"
+			android:layout_marginBottom="10dp"
+			android:paddingLeft="8dp"
+			android:paddingRight="8dp"
+			android:gravity="center_vertical"
+			android:textSize="@dimen/fetch_coffee_input_font_size"
+			android:hint="@string/fetch_input_edit_hint"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:scrollHorizontally="true"
+            android:focusableInTouchMode="true"
+            android:cursorVisible="false"/>
+	    
+		<include layout="@layout/input_digits_panel"/>
+
+	</LinearLayout>
+
+</LinearLayout><!-- From: file:/C:/Users/shengshoubo/Desktop/CoffeeMachine/app/src/main/res/layout/fragment_fetch_coffee.xml -->

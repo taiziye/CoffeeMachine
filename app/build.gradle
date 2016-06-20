@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.netease.vendor"
+        minSdkVersion 15
+        targetSdkVersion 17
+
+//      ndk {
+//          moduleName "serial_port"
+//      }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('coffeemachinekey.jks')
+            storePassword '163vendor'
+            keyAlias 'vendor'
+            keyPassword '163vendor'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/ASL2.0'
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:+'
+    compile files('libs/fastjson-1.1.34.android.jar')
+    compile files('libs/netty-3.5.10.Final.jar')
+    compile files('libs/SonicWaveNFC_Android.jar')
+    compile files('libs/universal-image-loader-1.9.1.jar')
+    compile files('libs/zxing.jar')
+    compile files('libs/speechsynthesizer_1.1.1.jar')
+}

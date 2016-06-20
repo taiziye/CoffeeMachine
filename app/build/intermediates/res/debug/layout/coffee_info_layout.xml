@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:background="@drawable/home_background">
+
+		<include layout="@layout/home_title_layout" />
+
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/home_indicator_bar_height"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:id="@+id/coffee_info_back"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/pay_back_selector"
+				android:layout_marginLeft="15dp"
+				android:contentDescription="@string/empty"/>
+
+			<FrameLayout
+				android:id="@+id/coffee_info_cart_linear"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="24dp">
+
+				<ImageView
+					android:id="@+id/coffee_info_cart"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/coffee_info_cart_icon"
+					android:layout_gravity="center"/>
+
+				<TextView
+					android:id="@+id/coffee_info_cart_indicator"
+					android:layout_width="32dp"
+					android:layout_height="32dp"
+					android:gravity="center"
+					android:background="@drawable/badge_bg"
+					android:layout_marginTop="8dp"
+					android:layout_gravity="top|right"
+					android:textColor="#ffffff"
+					android:textSize="20dp" />
+
+			</FrameLayout>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/coffee_info_img_area"
+			android:layout_width="350dp"
+			android:layout_height="350dp"
+			android:orientation="vertical"
+			android:layout_gravity="center_horizontal"
+			android:background="@drawable/coffee_info_bg"
+			android:layout_marginTop="@dimen/coffee_info_margin_top">
+
+			<ImageView
+				android:id="@+id/coffee_info_img"
+				android:layout_centerInParent="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/buy_coffee_loading"
+				android:contentDescription="@string/empty">
+			</ImageView>
+
+			<TextView
+				android:id="@+id/coffee_info_price"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="40dp"
+				android:layout_alignParentBottom="true"
+				android:layout_marginBottom="30dp"
+				android:textColor="#e1ddbe"
+				android:layout_centerHorizontal="true"/>
+
+			<TextView
+				android:id="@+id/coffee_info_ori_price"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="30dp"
+				android:textColor="#e1ddbe"
+				android:layout_alignParentBottom="true"
+				android:layout_marginBottom="65dp"
+				android:layout_centerHorizontal="true"/>
+
+		</RelativeLayout>
+
+		<TextView
+			android:id="@+id/coffee_info_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="@dimen/coffee_info_name_font_size"
+			android:textColor="#7d5a40"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="10dp"/>
+
+		<TextView
+			android:id="@+id/coffee_info_add_sugar_tip"
+			android:layout_marginTop="72dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="加糖"
+			android:layout_gravity="center_horizontal"
+			android:textSize="32dp"
+			android:textColor="#89964e"/>
+
+		<LinearLayout
+			android:id="@+id/add_sugar_area"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:background="@color/transparent"
+			android:gravity="center"
+			android:layout_marginTop="10dp">
+
+			<ImageView
+				android:id="@+id/add_sugar_no"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/add_no_sugar"
+				android:contentDescription="@string/empty"/>
+
+			<View
+				android:layout_width="@dimen/coffee_info_divider_width"
+				android:layout_height="@dimen/coffee_info_divider_height"
+				android:background="@color/pay_coffee_info_divider"/>
+
+			<ImageView
+				android:id="@+id/add_sugar_little"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/add_little_sugar"
+				android:contentDescription="@string/empty"/>
+
+			<View
+				android:layout_width="@dimen/coffee_info_divider_width"
+				android:layout_height="@dimen/coffee_info_divider_height"
+				android:background="@color/pay_coffee_info_divider"/>
+
+			<ImageView
+				android:id="@+id/add_sugar_middle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/add_middle_sugar"
+				android:contentDescription="@string/empty"/>
+
+			<View
+				android:layout_width="@dimen/coffee_info_divider_width"
+				android:layout_height="@dimen/coffee_info_divider_height"
+				android:background="@color/pay_coffee_info_divider"/>
+
+			<ImageView
+				android:id="@+id/add_sugar_more"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/add_more_sugar"
+				android:contentDescription="@string/empty"/>
+
+		</LinearLayout>
+
+		<RelativeLayout
+			android:id="@+id/set_buy_num_area"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:background="@color/transparent"
+			android:layout_marginTop="72dp">
+
+			<LinearLayout
+				android:id="@+id/set_buy_num"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true">
+			</LinearLayout>
+
+			<ImageView
+				android:id="@+id/coffee_info_add_to_cart"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toRightOf="@id/set_buy_num"
+				android:layout_marginLeft="96dp"
+				android:src="@drawable/add_to_cart_icon"
+				android:contentDescription="@string/empty"
+				android:layout_centerVertical="true"/>
+		</RelativeLayout>
+
+		<ImageView android:id="@+id/coffee_info_pay_loading"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="64dp"
+			android:background="@anim/anim_loading"
+			android:layout_gravity="center_horizontal"
+			android:visibility="gone"/>
+
+		<LinearLayout
+			android:id="@+id/coffee_info_pay_area"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_marginTop="64dp">
+
+			<LinearLayout
+				android:id="@+id/coffee_info_pay_detail_parent"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/coffee_info_discount_pop_window"
+				android:paddingBottom="20dp"
+				android:layout_gravity="center_horizontal"
+				android:visibility="gone">
+
+				<TextView
+					android:id="@+id/coffee_info_pay_detail"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="@dimen/coffee_info_name_font_size"
+					android:textColor="#ffffff"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="10dp"
+					android:text=""/>
+
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/coffee_info_total_pay"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/coffee_info_name_font_size"
+				android:textColor="#4f3f35"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="10dp" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:gravity="bottom"
+			android:layout_marginTop="18dp">
+
+			<LinearLayout
+				android:id="@+id/pay_choose_area"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center"
+				android:layout_marginBottom="20dp">
+
+				<TextView
+					android:id="@+id/coffee_info_pay_alipay"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:contentDescription="@string/empty"
+					android:drawableTop="@drawable/pay_alipay_qrcode_icon"
+					android:text="支付宝支付"
+					android:textSize="36dp"
+					android:textColor="#4f3f35"
+					android:drawablePadding="10dp"/>
+
+				<TextView
+					android:id="@+id/coffee_info_pay_wechat"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:contentDescription="@string/empty"
+					android:drawableTop="@drawable/pay_wechat_qrcode_icon"
+					android:text="微信支付"
+					android:textSize="36dp"
+					android:textColor="#4f3f35"
+					android:drawablePadding="10dp"
+					android:layout_marginLeft="48dp"/>
+
+			</LinearLayout>
+
+			<ImageView
+				android:id="@+id/coffee_info_banner"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:background="@drawable/pay_bottom_banner"
+				android:contentDescription="@string/empty"
+				android:scaleType="centerCrop"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<ImageView
+		android:id="@+id/cart_anim_icon"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:src="@drawable/cart_anim_icon"
+		android:visibility="gone" />
+
+</FrameLayout>
+
+
+
+<!-- From: file:/C:/Users/shengshoubo/Desktop/CoffeeMachine/app/src/main/res/layout/coffee_info_layout.xml -->

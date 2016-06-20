@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/home_background" >
+
+    <include
+        layout="@layout/home_title_layout" />
+
+    <LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+    	<FrameLayout
+            android:id="@+id/tab_content"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:background="@color/transparent"/>
+
+		<RadioGroup
+            android:id="@+id/tabs_home_page"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/tab_buy_coffee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:padding="28dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/tab_background"
+                android:drawableTop="@drawable/home_tab_buy_selector"
+                android:drawablePadding="10dp"
+                android:button="@null"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="购买"
+                android:textColor="#4f3f45"
+                android:textSize="28dp"
+                android:checked="true"/>
+			
+	        <RadioButton
+                android:id="@+id/tab_fetch_coffee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:padding="28dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="10dp"
+                android:background="@drawable/tab_background"
+                android:drawableTop="@drawable/home_tab_fetch_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="取货"
+                android:textColor="#4f3f45"
+                android:textSize="28dp"/>
+	        
+       		<RadioButton
+                android:id="@+id/tab_exchange"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:padding="28dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="10dp"
+                android:background="@drawable/tab_background"
+                android:drawableTop="@drawable/home_tab_exchange_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="兑换"
+                android:textColor="#4f3f45"
+                android:textSize="28dp"/>
+       		
+       		<RadioButton
+                android:id="@+id/tab_help"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:padding="28dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="10dp"
+                android:background="@drawable/tab_background"
+                android:drawableTop="@drawable/home_tab_help_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="帮助"
+                android:textColor="#4f3f45"
+                android:textSize="28dp"/>
+     
+   		</RadioGroup>
+	
+	</LinearLayout>
+	
+</LinearLayout>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/shengshoubo/Desktop/CoffeeMachine/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="letter_list">
+	    <item>\@</item>
+		<item>A</item>
+		<item>B</item>
+		<item>C</item>
+		<item>D</item>
+		<item>E</item>
+		<item>F</item>
+		<item>G</item>
+		<item>H</item>
+		<item>I</item>
+		<item>J</item>
+		<item>K</item>
+		<item>L</item>
+		<item>M</item>
+		<item>N</item>
+		<item>O</item>
+		<item>P</item>
+		<item>Q</item>
+		<item>R</item>
+		<item>S</item>
+		<item>T</item>
+		<item>U</item>
+		<item>V</item>
+		<item>W</item>
+		<item>X</item>
+		<item>Y</item>
+		<item>Z</item>
+		<item>\#</item>
+	</string-array>
+    <!-- From: file:/C:/Users/shengshoubo/Desktop/CoffeeMachine/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="black">#000000</color>
+    <color name="black_20_transparent">#30000000</color>
+    <color name="black_40_transparent">#90000000</color>
+    <color name="black_50_transparent">#80000000</color>
+    <color name="black_60_transparent">#a0000000</color>
+    <color name="black_75_transparent">#c0000000</color>
+    <color name="coffee">#4f3f35</color>
+    <color name="grey">#708090</color>
+    <color name="login_init_stock_disable">#505050</color>
+    <color name="login_init_stock_normal">#603a11</color>
+    <color name="login_init_stock_press">#603a11</color>
+    <color name="pay_coffee_info_divider">#89964e</color>
+    <color name="pay_coffee_price_discount">#FF8244</color>
+    <color name="sdk_share_dialogue_bg">#7F000000</color>
+    <color name="split_line_grey_color_d9d9d9">#D9D9D9</color>
+    <color name="tab_selected_bg">#C4E1E1</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_20_transparent">#30ffffff</color>
+    <color name="white_50_transparent">#80ffffff</color>
+    <color name="white_60_transparent">#99ffffff</color>
+    <color name="white_75_transparent">#c0ffffff</color>
+    <declare-styleable name="FlowLayout"><attr format="dimension" name="horizontalSpacing"/><attr format="dimension" name="verticalSpacing"/><attr format="enum" name="orientation"><enum name="horizontal" value="0"/><enum name="vertical" value="1"/></attr><attr format="boolean" name="debugDraw"/></declare-styleable>
+    <declare-styleable name="FlowLayout_LayoutParams"><attr format="boolean" name="layout_newLine"/><attr format="dimension" name="layout_horizontalSpacing"/><attr format="dimension" name="layout_verticalSpacing"/></declare-styleable>
+    <declare-styleable name="GridViewExt"><attr format="reference|integer" name="ColumnCount"/></declare-styleable>
+    <!-- From: file:/C:/Users/shengshoubo/Desktop/CoffeeMachine/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="coffee_info_add_no_sugar_size">30dp</dimen>
+    <dimen name="coffee_info_add_sugar_little_size">42dp</dimen>
+    <dimen name="coffee_info_add_sugar_middle_size">54dp</dimen>
+    <dimen name="coffee_info_add_sugar_more_size">66dp</dimen>
+    <dimen name="coffee_info_divider_height">2.0dp</dimen>
+    <dimen name="coffee_info_divider_width">25.0dp</dimen>
+    <dimen name="coffee_info_img_height">92.5dp</dimen>
+    <dimen name="coffee_info_img_width">160.0dp</dimen>
+    <dimen name="coffee_info_margin_bottom">10dp</dimen>
+    <dimen name="coffee_info_margin_top">15dp</dimen>
+    <dimen name="coffee_info_name_font_size">18.0dp</dimen>
+    <dimen name="coffee_info_payment_height">60dp</dimen>
+    <dimen name="coffee_info_payment_width">120dp</dimen>
+    <dimen name="control_add_dosing_area_margin">10.0dp</dimen>
+    <dimen name="control_add_dosing_dialog_padding">20dp</dimen>
+    <dimen name="control_add_dosing_item_font_size">28.0dp</dimen>
+    <dimen name="control_add_dosing_item_margin">10.0dp</dimen>
+    <dimen name="control_add_dosing_item_space">48.0dp</dimen>
+    <dimen name="control_navi_item_font_size">28.0dp</dimen>
+    <dimen name="control_navi_item_height">72dp</dimen>
+    <dimen name="control_test_area_margin">10.0dp</dimen>
+    <dimen name="control_test_item_font_size">28.0dp</dimen>
+    <dimen name="easy_dialog_bottom_button_font_size">28dp</dimen>
+    <dimen name="easy_dialog_bottom_button_padding">20dp</dimen>
+    <dimen name="easy_dialog_bottom_button_split_width">4dp</dimen>
+    <dimen name="easy_dialog_edit_font_size">20.0dp</dimen>
+    <dimen name="easy_dialog_horizontal_divider_height">3dp</dimen>
+    <dimen name="easy_dialog_message_font_size">28.0dp</dimen>
+    <dimen name="easy_dialog_message_margin">20.0dp</dimen>
+    <dimen name="easy_dialog_title_font_size">28.0dp</dimen>
+    <dimen name="easy_dialog_width">300dp</dimen>
+    <dimen name="easy_dilaog_title_padding">20.0dp</dimen>
+    <dimen name="fetch_coffee_grid_size">45.0dp</dimen>
+    <dimen name="fetch_coffee_grid_space">3.0dp</dimen>
+    <dimen name="fetch_coffee_grid_sure_height">96.0dp</dimen>
+    <dimen name="fetch_coffee_input_font_size">24.0dp</dimen>
+    <dimen name="fetch_coffee_input_margin">10dp</dimen>
+    <dimen name="fetch_coffee_input_panel_height">48dp</dimen>
+    <dimen name="fetch_coffee_input_panel_width">198dp</dimen>
+    <dimen name="fetch_coffee_input_tip_font_size">18.0dp</dimen>
+    <dimen name="fetch_coffee_qrcode_margin_top">15.0dp</dimen>
+    <dimen name="fetch_coffee_qrcode_size">112.0dp</dimen>
+    <dimen name="fetch_coffee_qrcode_tip_margin_top">10dp</dimen>
+    <dimen name="help_come_soon_font_size">50.0dp</dimen>
+    <dimen name="help_instruction_level1_font_size">28.0dp</dimen>
+    <dimen name="help_instruction_level2_font_size">25.0dp</dimen>
+    <dimen name="home_back_btn_size">35.0dp</dimen>
+    <dimen name="home_grid_item_font_big_size">16.0dp</dimen>
+    <dimen name="home_grid_item_font_size">14.0dp</dimen>
+    <dimen name="home_grid_item_img_padding">12dp</dimen>
+    <dimen name="home_indicator_bar_height">50.0dp</dimen>
+    <dimen name="home_indicator_btn_size">35.0dp</dimen>
+    <dimen name="home_indicator_tip_font_size">24.0dp</dimen>
+    <dimen name="home_title_bar_height">50dp</dimen>
+    <dimen name="home_title_bar_icon_height">40dp</dimen>
+    <dimen name="home_title_bar_icon_margin_left">10dp</dimen>
+    <dimen name="home_title_bar_icon_width">76dp</dimen>
+    <dimen name="home_title_bar_title_font_size">18.0dp</dimen>
+    <dimen name="login_btn_height">48.0dp</dimen>
+    <dimen name="login_content_margin_top">8dp</dimen>
+    <dimen name="login_content_padding">15dp</dimen>
+    <dimen name="login_font_size">18.0dp</dimen>
+    <dimen name="login_title_bar_btn_w">50.0dp</dimen>
+    <dimen name="login_title_bar_height">48.0dp</dimen>
+    <dimen name="login_title_bar_title_font_size">18.0dip</dimen>
+    <dimen name="make_coffee_animation_height">175dp</dimen>
+    <dimen name="make_coffee_animation_width">105dp</dimen>
+    <dimen name="management_edit_font_size">24.0dp</dimen>
+    <dimen name="management_edit_margin_left">10dp</dimen>
+    <dimen name="management_edit_text_h">48.0dp</dimen>
+    <dimen name="management_setting_item_margin">10dp</dimen>
+    <dimen name="management_text_font_size">18.0dp</dimen>
+    <dimen name="network_status_bar_height">32dp</dimen>
+    <dimen name="pay_coffee_operation_instruction_height">152dp</dimen>
+    <dimen name="pay_coffee_operation_instruction_width">280dp</dimen>
+    <dimen name="pay_coffee_timer_font_size">18.0dp</dimen>
+    <dimen name="pay_qrcode_discount_font_size">18.0dp</dimen>
+    <dimen name="pay_qrcode_margin_top">28dp</dimen>
+    <dimen name="pay_qrcode_price_font_size">16.0dp</dimen>
+    <dimen name="pay_qrcode_size">140dp</dimen>
+    <dimen name="toast_font_size">15dp</dimen>
+    <dimen name="toast_padding">10dp</dimen>
+    <dimen name="welcome_app_download_qrcode_space">12dp</dimen>
+    <dimen name="welcome_app_qrcode_size">96dp</dimen>
+    <dimen name="welcome_app_qrcode_tip_h">28dp</dimen>
+    <dimen name="welcome_app_qrcode_tip_w">96dp</dimen>
+    <dimen name="welcome_enter_btn_size">72dp</dimen>
+    <dimen name="welcome_enter_margin_bottom">48dp</dimen>
+    <dimen name="welcome_enter_margin_right">30dp</dimen>
+    <dimen name="welcome_logo_margin_bottom">10dp</dimen>
+    <!-- From: file:/C:/Users/shengshoubo/Desktop/CoffeeMachine/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="CafeAmericano">美式咖啡</string>
+    <string name="EspressoCoffee">意式浓缩咖啡</string>
+    <string name="ad_kicked_btn_cancel">取消</string>
+    <string name="ad_kicked_btn_ok">重新登录</string>
+    <string name="ad_kicked_title">离线提示</string>
+    <string name="add_sugar_tip">加糖</string>
+    <string name="app_name">Z-STAR</string>
+    <string name="can_not_find_version_name">未知</string>
+    <string name="cart_actual_pay">实付:¥%.2f</string>
+    <string name="cart_exceeds_max_num">一次最多可购买9杯</string>
+    <string name="cart_favour_discount">折扣优惠:¥%.2f</string>
+    <string name="cart_favour_meetsub">满减优惠:¥%.2f</string>
+    <string name="cart_total_num">共%d杯</string>
+    <string name="cart_total_price">总计:¥%.2f</string>
+    <string name="control_add_dosing">配料设置</string>
+    <string name="control_doing_list_is_null">原料列表为空</string>
+    <string name="control_fix_error_sure">确认修复问题了吗?</string>
+    <string name="control_other">其它</string>
+    <string name="control_reset_dosing">重置物料库存</string>
+    <string name="control_set_dosing_is_null">有一个或多个料盒未设置</string>
+    <string name="control_test_machine">机器调试</string>
+    <string name="control_update_dosing">更新物料库存</string>
+    <string name="empty">empty</string>
+    <string name="error_configuration">请先配置串口参数</string>
+    <string name="error_security">没有串口读写权限</string>
+    <string name="error_unknown">串口无法打开</string>
+    <string name="exchange_error_default">未知错误</string>
+    <string name="exchange_error_dosing_not_enough">配料不足</string>
+    <string name="exchange_error_drawback">订单已退款</string>
+    <string name="exchange_error_have_fetch">咖啡被取过</string>
+    <string name="exchange_error_have_fetch_by_other_mac">咖啡被其他咖啡机取过</string>
+    <string name="exchange_error_no_coffeeindent">无咖啡订单或者无此咖啡机</string>
+    <string name="exchange_error_no_pay">订单未付款</string>
+    <string name="exchange_error_system">系统错误</string>
+    <string name="exchange_input_edit_hint">输入兑换码</string>
+    <string name="fetch_coffee_input_code_tip">输入取货码取货</string>
+    <string name="fetch_coffee_qrcode_tip">APP扫码取货</string>
+    <string name="fetch_input_edit_hint">输入取货码</string>
+    <string name="fetch_is_requesting">正在取货，请勿重复提交请求</string>
+    <string name="help_come_soon">敬请期待</string>
+    <string name="help_instruction_buy">使用说明</string>
+    <string name="help_instruction_kefu">联系我们</string>
+    <string name="help_instruction_kefu_phone">客服热线：0571-86681790</string>
+    <string name="help_instruction_kefu_time">客服时间：周一至周日 09:30--21:30</string>
+    <string name="help_instruction_kefu_tip">如果您对Z-STAR的产品及服务有任何疑问或建议，欢迎您来电</string>
+    <string name="help_instruction_step1">1.　点击屏幕进入购买界面</string>
+    <string name="help_instruction_step2">2.　选择饮品</string>
+    <string name="help_instruction_step3">3.　选择支付方式</string>
+    <string name="help_instruction_step4">4.　支付完成等待取货</string>
+    <string name="help_instruction_step5">5.　制作完成取走饮品</string>
+    <string name="home_coffee_machine_no">咖啡机编号：%s　</string>
+    <string name="home_discount_only">全场%s折</string>
+    <string name="home_discount_reduction">全场%1$s折后满%2$s减%3$s</string>
+    <string name="home_reduction_only">满%1$s减%2$s</string>
+    <string name="login_account_is_null">请输入帐号</string>
+    <string name="login_add_dosing_by_g">单位g</string>
+    <string name="login_add_dosing_by_ml">单位ml</string>
+    <string name="login_add_dosing_by_num">单位个</string>
+    <string name="login_add_dosing_init">填料初始化</string>
+    <string name="login_coffee_info_label">咖啡机信息</string>
+    <string name="login_coffee_machine_id">咖啡机ID：</string>
+    <string name="login_coffee_machine_pwd">认证密码：</string>
+    <string name="login_coffee_machine_start">启动</string>
+    <string name="login_coffee_machine_title">咖啡机启动</string>
+    <string name="login_init_dosing">初始化填料信息</string>
+    <string name="login_password_is_null">请输入密码</string>
+    <string name="machine_washing">咖啡机清洗中，请稍候使用</string>
+    <string name="make_coffee_cancel">确定要取消剩余订单？</string>
+    <string name="make_coffee_cart_status">%1$s正在制作中\n还剩%2$d杯饮料正在排队制作</string>
+    <string name="make_coffee_failed">饮料制作失败,24小时内退款回原处</string>
+    <string name="make_coffee_prepare">饮料正准备制作，请耐心等候</string>
+    <string name="make_coffee_retry">您的饮料尚未取走，请取走杯子后重试</string>
+    <string name="make_coffee_status">%1$s正在制作中，请耐心等候</string>
+    <string name="make_coffee_successful_all">饮料全部制作成功，请享用。</string>
+    <string name="make_coffee_successful_and_continue">%s已经制作完成，请取货。\n取货后将自动制作下一杯饮料</string>
+    <string name="make_coffee_user_cancel">饮料制作已取消，未制作饮料将在24小时内退款</string>
+    <string name="network_connect_failed">未连接</string>
+    <string name="network_connecting">连接中…</string>
+    <string name="network_failed_unavailable">网络连接失败，请稍候重试</string>
+    <string name="network_forbidden_login">您被服务器禁止登录，详询客服</string>
+    <string name="network_is_not_available">网络连接失败，请检查你的网络设置</string>
+    <string name="network_kick_i_know">知道了</string>
+    <string name="network_kick_title">身份失效</string>
+    <string name="network_need_verify_again">在其他咖啡机上使用了相同的ID，请确认</string>
+    <string name="network_no_connect">无网络</string>
+    <string name="network_server_is_not_available">连接服务器失败，稍后将重试连接</string>
+    <string name="pay_actual_pay">实付¥%.2f</string>
+    <string name="pay_add_little_sugar">少糖</string>
+    <string name="pay_add_middle_sugar">中糖</string>
+    <string name="pay_add_more_sugar">多糖</string>
+    <string name="pay_add_no_sugar">无糖</string>
+    <string name="pay_ali_qrcode_tips">支付宝扫码付款流程</string>
+    <string name="pay_ali_wave_tips">支付宝声波付款流程</string>
+    <string name="pay_by_sonicwave_tip">请用支付宝当面付付款</string>
+    <string name="pay_cart_no_drinks_to_pay">购物车没有可供支付的饮料</string>
+    <string name="pay_cart_stock_insufficient">物料不足，不能继续添加咖啡</string>
+    <string name="pay_cart_title_cart">购物车</string>
+    <string name="pay_cart_title_pay">支付</string>
+    <string name="pay_cart_total_price_format">共计%s元</string>
+    <string name="pay_choose_payment">选择支付方式</string>
+    <string name="pay_coffee_price_format">¥%s</string>
+    <string name="pay_error_cancel_indent">交易被关闭</string>
+    <string name="pay_error_timeout">请求二维码超时，请重试</string>
+    <string name="pay_error_waiting_pay">等待支付</string>
+    <string name="pay_favour_tip">总额¥%1$.2f - 折扣¥%2$.2f - 满减¥%3$.2f  </string>
+    <string name="pay_favour_tip_discount">总额¥%1$.2f - 折扣¥%2$.2f</string>
+    <string name="pay_favour_tip_meetsub">总额¥%1$.2f - 满减¥%2$.2f</string>
+    <string name="pay_generate_qrcode">正在生成二维码</string>
+    <string name="pay_pay_success">支付成功</string>
+    <string name="pay_qrcode_detail_tip">共优惠¥%1$.2f, 只需支付¥%2$.2f</string>
+    <string name="pay_qrcode_detail_tip_no_favour">只需支付¥%.2f</string>
+    <string name="pay_qrcode_price">%s元</string>
+    <string name="pay_scan_this_qrcode">请扫描此二维码</string>
+    <string name="pay_timer_tip">%d秒</string>
+    <string name="pay_waiting_scan">请扫描下方二维码完成支付</string>
+    <string name="pay_weixin_qrcode_tips">微信扫码付款流程</string>
+    <string name="relogin_kicked_btn_cancel">取消</string>
+    <string name="relogin_kicked_btn_ok">确定</string>
+    <string name="relogin_kicked_message">服务器连接失败，请重新登录。</string>
+    <string name="relogin_kicked_title">重登提示</string>
+    <string name="sdcard_deny">请插入SD卡</string>
+    <string name="sdcard_not_enough">存储空间已不足，无法保存此次多媒体消息</string>
+    <string name="sdcard_not_enough_warning">剩余存储空间很少，建议清理存储卡</string>
+    <string name="setTemp">正在设置咖啡机</string>
+    <string name="verify_code_is_null">取货码不能为空</string>
+    <string name="version_name">当前版本号：</string>
+    <string name="welcome_enter_control_panel_tip">再按一次进入咖啡机后台</string>
+    <string name="welcome_get_dosing_list_fail">获取原料列表失败</string>
+    <string name="welcome_get_dosing_list_success">获取原料列表成功</string>
+    <string name="welcome_get_machine_config">正在获取咖啡机配置</string>
+    <string name="welcome_set_temperature">正在设置锅炉温度</string>
+    <string name="welcome_set_temperature_fail">设置咖啡机锅炉温度失败</string>
+    <string name="welcome_set_temperature_success">设置咖啡机锅炉温度成功</string>
+    <string name="welcome_set_temperature_timeout">设置咖啡机锅炉温度超时</string>
+    <string name="welcome_start_wash_machine">正在清洗咖啡机</string>
+    <string name="welcome_sync_stock_fail">库存同步失败</string>
+    <string name="welcome_sync_stock_success">库存同步成功</string>
+    <string name="welcome_wash_machine_fail">咖啡机清洗失败</string>
+    <string name="welcome_wash_machine_success">咖啡机清洗成功</string>
+    <!-- From: file:/C:/Users/shengshoubo/Desktop/CoffeeMachine/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="NoTitle" parent="android:Theme">
+		<item name="android:windowNoTitle">true</item> 
+	</style>
+    <style name="dialog_button_text_style">
+        <item name="android:textSize">@dimen/easy_dialog_bottom_button_font_size</item>
+        <item name="android:textColor">#4f3f35</item>
+        <item name="android:background">#e0dfdb</item>
+        <item name="android:paddingTop">@dimen/easy_dialog_bottom_button_padding</item>
+        <item name="android:paddingBottom">@dimen/easy_dialog_bottom_button_padding</item>
+    </style>
+    <style name="dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/sdk_share_dialogue_bg</item>
+    </style>
+    <style name="dialog_title_text_style">
+        <item name="android:textSize">@dimen/easy_dialog_title_font_size</item>
+        <item name="android:textColor">#01D9AE</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">@dimen/easy_dilaog_title_padding</item>
+        <item name="android:paddingRight">@dimen/easy_dilaog_title_padding</item>
+        <item name="android:paddingTop">@dimen/easy_dilaog_title_padding</item>
+        <item name="android:paddingBottom">@dimen/easy_dilaog_title_padding</item>
+    </style>
+    <style name="easy_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="green_bottom_line_edit_text_with_length_dialog_style" parent="@android:style/Widget.EditText">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:background">@drawable/green_edit_text_bg</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+    <style name="progressStyle">
+        <item name="android:maxWidth">48.0dip</item>
+        <item name="android:maxHeight">48.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_loading_white</item>
+        <item name="android:minWidth">48.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+</resources>

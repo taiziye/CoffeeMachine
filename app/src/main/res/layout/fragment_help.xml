@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="@color/transparent"
+	android:orientation="vertical">
+	
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+        android:layout_height="@dimen/home_indicator_bar_height"
+		android:orientation="horizontal">
+		
+	    <ImageView 
+	        android:id="@+id/help_back_btn"
+            android:layout_width="@dimen/home_back_btn_size"
+            android:layout_height="@dimen/home_back_btn_size"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/home_back_selector"
+	        android:layout_marginLeft="15dp"
+	        android:contentDescription="@string/empty"
+            android:visibility="gone"/>
+
+	</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="48dp"
+        android:paddingRight="48dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help_instruction_buy"
+            android:textSize="@dimen/help_instruction_level1_font_size"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/coffee"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="96dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/help_instruction_step1"
+                android:textSize="@dimen/help_instruction_level2_font_size"
+                android:textColor="@color/coffee"
+                android:padding="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/help_instruction_step2"
+                android:textSize="@dimen/help_instruction_level2_font_size"
+                android:textColor="@color/coffee"
+                android:padding="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/help_instruction_step3"
+                android:textSize="@dimen/help_instruction_level2_font_size"
+                android:textColor="@color/coffee"
+                android:padding="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/help_instruction_step4"
+                android:textSize="@dimen/help_instruction_level2_font_size"
+                android:textColor="@color/coffee"
+                android:padding="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/help_instruction_step5"
+                android:textSize="@dimen/help_instruction_level2_font_size"
+                android:textColor="@color/coffee"
+                android:padding="15dp"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help_instruction_kefu"
+            android:textSize="@dimen/help_instruction_level1_font_size"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/coffee"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="96dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/help_instruction_kefu_phone"
+                android:textSize="@dimen/help_instruction_level2_font_size"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/coffee"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/help_instruction_kefu_time"
+                android:textSize="@dimen/help_instruction_level2_font_size"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/coffee"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/help_instruction_kefu_tip"
+                android:textSize="@dimen/help_instruction_level2_font_size"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/coffee"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

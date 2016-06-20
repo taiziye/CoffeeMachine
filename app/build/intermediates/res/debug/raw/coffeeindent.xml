@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mapers namespace="coffeeindent" >    
+    
+    <insert
+        id="insertCoffeeIndent"
+        parameterClass="com.netease.vendor.service.domain.CoffeeIndent" 
+        >
+	    <![CDATA[ 
+      	insert or replace into coffeeindent (    
+           coffeeindent,
+           coffeeid,
+           dosing,
+     	   status)
+           values(
+           #coffeeindent#,
+           #coffeeid#,
+           #dosing#,
+     	   #status#
+           )  
+		]]>
+	</insert>
+	
+    <update
+        id="updateCoffeeIndentStatus"
+        parameterClass="com.netease.vendor.service.domain.CoffeeIndent" >
+		<![CDATA[ 
+	       UPDATE coffeeindent set  
+	           status=#status#
+	           where coffeeindent=#coffeeindent#
+	     ]]>
+    </update>
+	
+    <select
+        id="getCoffeeIndent"
+        parameterClass="java.lang.String"
+        returnClass="com.netease.vendor.service.domain.CoffeeIndent"
+        >   
+		<![CDATA[ 
+			SELECT * FROM coffeeindent WHERE coffeeindent=#value#
+
+	    ]]>
+    </select>
+
+</mapers>

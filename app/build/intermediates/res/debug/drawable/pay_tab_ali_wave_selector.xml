@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 默认时的图片 -->
+    <item android:drawable="@drawable/pay_ali_wave" android:state_checked="false"/>
+    <!-- 选择时的图片 -->
+    <item android:drawable="@drawable/pay_ali_wave_hover" android:state_checked="true"/>
+</selector><!-- From: file:/C:/Users/shengshoubo/Desktop/CoffeeMachine/app/src/main/res/drawable/pay_tab_ali_wave_selector.xml -->

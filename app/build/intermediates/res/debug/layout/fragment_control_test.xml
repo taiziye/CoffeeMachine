@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#505050">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="#ffffff"
+	    android:layout_margin="@dimen/control_test_area_margin">
+	    
+        <Button
+            android:id="@+id/control_test_set_temp_instruction"
+            android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/transparent"
+		    android:text="设置温度"
+		    android:textStyle="bold"
+		    android:textSize="@dimen/control_test_item_font_size"
+		    android:textColor="#000000"/>
+		
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="4dp"
+	        android:background="#505050"/>
+        
+        <Button
+            android:id="@+id/control_test_clean_brew_instruction"
+            android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/transparent"
+		    android:text="清洗磨豆装置"
+		    android:textStyle="bold"
+		    android:textSize="@dimen/control_test_item_font_size"
+		    android:textColor="#000000"/>
+		
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="4dp"
+	        android:background="#505050"/>
+        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#000000">
+
+            <Button
+                android:id="@+id/control_test_water_injection_on_instruction"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="4dp"
+                android:background="#ffffff"
+                android:text="锅炉排气(开)"
+                android:textStyle="bold"
+                android:textSize="@dimen/control_test_item_font_size"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/control_test_water_injection_off_instruction"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:background="#ffffff"
+                android:text="锅炉排气(关)"
+                android:textStyle="bold"
+                android:textSize="@dimen/control_test_item_font_size"
+                android:textColor="#000000"/>
+        </LinearLayout>
+		
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="4dp"
+	        android:background="#505050"/>
+        
+        <Button
+            android:id="@+id/control_test_bean_grind_instruction"
+            android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/transparent"
+		    android:text="打磨豆咖啡"
+		    android:textStyle="bold"
+		    android:textSize="@dimen/control_test_item_font_size"
+		    android:textColor="#000000"/>
+        
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="4dp"
+	        android:background="#505050"/>
+        
+        <Button
+            android:id="@+id/control_test_stick_instruction"
+            android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/transparent"
+		    android:text="落棒"
+		    android:textStyle="bold"
+		    android:textSize="@dimen/control_test_item_font_size"
+		    android:textColor="#000000"/>
+        
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="4dp"
+	        android:background="#505050"/>
+        
+        <Button
+            android:id="@+id/control_test_cup_turn_in_instruction"
+            android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/transparent"
+		    android:text="杯嘴转到里面"
+		    android:textStyle="bold"
+		    android:textSize="@dimen/control_test_item_font_size"
+		    android:textColor="#000000"/>
+        
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="4dp"
+	        android:background="#505050"/>
+        
+        <Button
+            android:id="@+id/control_test_cup_turn_out_instruction"
+            android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/transparent"
+		    android:text="杯嘴转到外面"
+		    android:textStyle="bold"
+		    android:textSize="@dimen/control_test_item_font_size"
+		    android:textColor="#000000"/>
+        
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="4dp"
+	        android:background="#505050"/>
+        
+        <Button
+            android:id="@+id/control_test_cup_turn_instruction"
+            android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/transparent"
+		    android:text="杯筒转动"
+		    android:textStyle="bold"
+		    android:textSize="@dimen/control_test_item_font_size"
+		    android:textColor="#000000"/>
+        
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="4dp"
+	        android:background="#505050"/>
+        
+        <Button
+            android:id="@+id/control_test_cup_drop_instruction"
+            android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/transparent"
+		    android:text="落杯"
+		    android:textStyle="bold"
+		    android:textSize="@dimen/control_test_item_font_size"
+		    android:textColor="#000000"/>
+        
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="4dp"
+	        android:background="#505050"/>
+        
+        <Button
+            android:id="@+id/control_test_pump_open_instruction"
+            android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/transparent"
+		    android:text="打开水泵"
+		    android:textStyle="bold"
+		    android:textSize="@dimen/control_test_item_font_size"
+		    android:textColor="#000000"/>
+        
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="4dp"
+	        android:background="#505050"/>
+        
+        <Button
+            android:id="@+id/control_test_pump_close_instruction"
+            android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/transparent"
+		    android:text="关闭水泵"
+		    android:textStyle="bold"
+		    android:textSize="@dimen/control_test_item_font_size"
+		    android:textColor="#000000"/>
+        
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="4dp"
+	        android:background="#505050"/>
+        
+        <Button
+            android:id="@+id/control_test_temp_get_instruction"
+            android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/transparent"
+		    android:text="获取温度"
+		    android:textStyle="bold"
+		    android:textSize="@dimen/control_test_item_font_size"
+		    android:textColor="#000000"/>
+        
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="4dp"
+	        android:background="#505050"/>
+        
+        <Button
+            android:id="@+id/control_test_washing_instruction"
+            android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/transparent"
+		    android:text="清洗"
+		    android:textStyle="bold"
+		    android:textSize="@dimen/control_test_item_font_size"
+		    android:textColor="#000000"/>
+    </LinearLayout>
+
+</LinearLayout>
+<!-- From: file:/C:/Users/shengshoubo/Desktop/CoffeeMachine/app/src/main/res/layout/fragment_control_test.xml -->

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:paddingTop="20dp">
+
+    <include layout="@layout/add_dosing_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/management_setting_item_margin" >
+
+        <Button
+            android:id="@+id/control_update_dosing"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_btn_height"
+            android:background="@drawable/login_init_stock_btn_selector"
+            android:text="@string/control_update_dosing"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/login_font_size" />
+
+    </LinearLayout>
+
+</LinearLayout>
+<!-- From: file:/C:/Users/shengshoubo/Desktop/CoffeeMachine/app/src/main/res/layout/fragment_control_add_dosing.xml -->

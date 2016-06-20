@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/control_navi_item_height"
+    android:focusable="true"
+    android:background="@drawable/control_navi_bg_selector" >
+
+    <TextView
+        android:id="@+id/navi_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="20dip"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="设置"
+        android:textColor="#ccccc6"
+        android:textSize="@dimen/control_navi_item_font_size"
+        android:textStyle="bold" />
+
+</RelativeLayout><!-- From: file:/C:/Users/shengshoubo/Desktop/CoffeeMachine/app/src/main/res/layout/control_navi_item.xml -->

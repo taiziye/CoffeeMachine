@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="@color/transparent" 
+	android:orientation="vertical"
+	android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_indicator_bar_height"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/page_indicator_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/page_indicator_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_page_up_selector"
+                android:contentDescription="@string/empty"/>
+
+            <TextView
+                android:id="@+id/page_indicator_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="@dimen/home_indicator_tip_font_size"
+                android:text="1/1"
+                android:textColor="#b0734f"/>
+
+            <ImageView
+                android:id="@+id/page_indicator_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_page_down_selector"
+                android:contentDescription="@string/empty"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/home_cart_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp">
+
+            <ImageView
+                android:id="@+id/home_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/coffee_info_cart_icon"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/home_cart_num_indicator"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:gravity="center"
+                android:background="@drawable/badge_bg"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="top|right"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+		android:orientation="horizontal" 
+		android:gravity="center">
+		
+		<com.netease.vendor.ui.ViewFlipper
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent"
+			android:id="@+id/myFlipper"/>
+	</LinearLayout>
+	
+</LinearLayout><!-- From: file:/C:/Users/shengshoubo/Desktop/CoffeeMachine/app/src/main/res/layout/fragment_buy_coffee.xml -->

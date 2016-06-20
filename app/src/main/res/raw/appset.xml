@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mapers namespace="contacts" >
+
+	<insert
+        id="setAppSet"
+        parameterClass="com.netease.vendor.domain.AppSet" >
+		<![CDATA[ 
+	      insert or replace into appset ( pKey, pValue, pReamrk )                   
+	           values(#pkey#,#pvalue#,#preamrk#)  
+	     ]]>
+    </insert>
+    
+	<select
+		id="searchAppSet"      
+		parameterClass="com.netease.vendor.domain.AppSet"
+        returnClass="com.netease.vendor.domain.AppSet" >
+		<![CDATA[ 
+			SELECT * FROM appset WHERE pKey=#pkey#
+		]]>
+    </select>
+    
+	<select
+		id="searchAppSetEx"      
+		parameterClass="com.netease.vendor.domain.AppSet"
+        returnClass="com.netease.vendor.domain.AppSet" >
+		<![CDATA[ 
+			SELECT * FROM appset WHERE pKey=#pkey# and preamrk=#preamrk#
+		]]>
+    </select>
+    
+    <select
+		id="tableIsExist"      
+		parameterClass="com.netease.vendor.domain.DBM"
+        returnClass="java.lang.Integer" >
+		<![CDATA[ 
+			SELECT COUNT(*) FROM sqlite_master where type='table' and name=#tablename#
+		]]>
+    </select>
+
+</mapers>

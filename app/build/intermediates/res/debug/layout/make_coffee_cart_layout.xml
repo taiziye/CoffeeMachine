@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/home_background">
+
+    <RelativeLayout
+        android:id="@+id/make_coffee_titlebar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:padding="20dp">
+
+	    <ImageView
+	        android:id="@+id/make_coffee_cancel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/make_coffee_cancel_icon"
+	        android:contentDescription="@string/empty"
+			android:visibility="visible"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/make_coffee_status_area"
+		android:layout_width="match_parent"
+		android:layout_height="300dp"
+		android:layout_marginTop="380dp">
+
+		<ImageView
+			android:id="@+id/make_coffee_animation"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:contentDescription="@string/empty"
+			android:layout_centerInParent="true"
+			android:background="@anim/anim_make_coffee"/>
+
+		<ImageView
+			android:id="@+id/make_coffee_failed"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:contentDescription="@string/empty"
+			android:layout_centerInParent="true"
+			android:layout_marginTop="60dp"
+			android:background="@drawable/make_coffee_failed"
+			android:visibility="invisible"/>
+
+		<ImageView
+			android:id="@+id/make_coffee_success"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:contentDescription="@string/empty"
+			android:layout_centerInParent="true"
+			android:layout_marginTop="60dp"
+			android:background="@drawable/make_coffee_success"
+			android:visibility="invisible"/>
+
+	</RelativeLayout>
+
+    <TextView 
+        android:id="@+id/make_coffee_progress_tip"
+        android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+		android:gravity="center"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/make_coffee_prepare"
+	    android:textSize="@dimen/coffee_info_name_font_size"
+	    android:textColor="#4f3f35"
+	    android:layout_marginTop="163dp"
+	    android:layout_below="@id/make_coffee_status_area"/>
+
+	<ImageView
+		android:id="@+id/make_coffee_retry"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:contentDescription="@string/empty"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@id/make_coffee_progress_tip"
+		android:layout_marginTop="40dp"
+		android:background="@drawable/make_coffee_retry_selector"
+		android:visibility="invisible"/>
+
+</RelativeLayout><!-- From: file:/C:/Users/shengshoubo/Desktop/CoffeeMachine/app/src/main/res/layout/make_coffee_cart_layout.xml -->
